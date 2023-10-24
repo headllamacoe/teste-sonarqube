@@ -1,0 +1,23 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: teste-sonarqube
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    backstage.io/kubernetes-id: rfp-vivo-2023
+    github.com/project-slug: headllamacoe/teste-sonarqube
+    sonarqube.org/project-key: headllamacoeteste-sonarqube
+  tags:
+      - frontend
+      - react
+  links:
+    - url: https://frontreact.rfp.sysmap.dev
+      title: WebApp
+      icon: dashboard
+      type: admin-dashboard
+spec:
+  type: website
+  lifecycle: production
+  owner: group:default/coe
+  system: system:default/coe
+  consumesApis: []
